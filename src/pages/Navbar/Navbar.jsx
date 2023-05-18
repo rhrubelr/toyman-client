@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
     return (
-        <div>
+        <div className="mb-10">
             <div className="navbar bg-emerald-300">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -13,12 +13,13 @@ const Navbar = () => {
                             <Link to='/'><li><a>Home</a></li></Link>
                             <li tabIndex={0}>
                                 <a className="justify-between">
-                                    Parent
+                                    All Toys
                                     <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
                                 </a>
                                 
                             </li>
-                            <li><a>Item 3</a></li>
+                            <li><a>My Toys</a></li>
+                            <li><a>Add a Toys</a></li>
                             <Link to='/blogs'><li><a>Blogs</a></li></Link>
                         </ul>
                     </div>
@@ -29,11 +30,12 @@ const Navbar = () => {
                     <Link to='/'><li><a>Home</a></li></Link>
                         <li tabIndex={0}>
                             <a>
-                                Parent
+                               All Toys
                             </a>
                             
                         </li>
-                        <li><a>Item 3</a></li>
+                        <li><a>My Toys</a></li>
+                        <li><a>Add a Toys</a></li>
                         <Link to='/blogs'><li><a>Blogs</a></li></Link>
                     </ul>
                 </div>
