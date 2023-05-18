@@ -2,10 +2,17 @@ import { FaGithub, FaGoogle } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 const Login = () => {
+    const handleLogin = event =>{
+        event.preventDefault();
+        const form = event.target;
+        const email = form.email.value;
+        const password = form.password.value;
+        console.log(email, password)        
+    }
     return (
-        <div className='mb-10  container mx-auto bg-cyan-950 rounded-lg py-10'>
+        <div  className='mb-10  container mx-auto bg-cyan-950 rounded-lg py-10'>
             <h3 className=' w-80 py-2 mt-2 mx-auto text-purple-100 font-bold text-lg rounded-lg bg-purple-900 text-center'>Please Login</h3>
-            <form className="form-control w-full max-w-xs mx-auto">
+            <form onSubmit={handleLogin} className="form-control w-full max-w-xs mx-auto">
 
                 <label className="label">
                     <span className="label-text font-bold text-white">What is your Email ?</span>
