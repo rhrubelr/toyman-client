@@ -21,6 +21,7 @@ const Home = () => {
             })
     }, [])
 
+
     const babyToys = () => {
         const filter = products.filter(product => product.category == 'baby toy')
         console.log(filter)
@@ -50,7 +51,7 @@ const Home = () => {
             <h2 className='text-center font-bold text-2xl text-white bg-gray-900 py-5'>Baby Gallary</h2>
             <Marquee>
                 {
-                    toys.map(toy =>
+                    products.map(toy =>
                         <Galary
                             key={toys.id} toy={toy}
                         ></Galary>)
@@ -72,7 +73,7 @@ const Home = () => {
                 <TabPanel>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-5 container mx-auto m-2">
                         {
-                            toys.map(toy =>
+                            products.map(toy =>
                                 <ToyCard
                                     key={toy.id}
                                     toy={toy}
