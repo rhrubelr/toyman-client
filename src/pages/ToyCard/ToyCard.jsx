@@ -1,4 +1,5 @@
-
+import { Rating } from '@smastrom/react-rating'
+import '@smastrom/react-rating/style.css'
 const ToyCard = ({toy}) => {
     const {name,price, rating, image} = toy;
     console.log(toy)
@@ -10,8 +11,8 @@ const ToyCard = ({toy}) => {
                 </figure>
                 <div className="card-body items-center text-center">
                     <h2 className="card-title">Name: {name}</h2>
-                    <p> Price: {price}</p>
-                    <p> Rating: {rating}</p>
+                    <p className="m-0"> Price: ${price}</p>
+                    <p className="m-0"> Rating: {rating} <Rating style={{ maxWidth: 100 }} value={rating} readOnly  /></p>
                     <div className="card-actions">
                         <button className="btn btn-primary">Veiw Details</button>
                     </div>
