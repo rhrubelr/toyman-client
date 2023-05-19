@@ -12,14 +12,20 @@ const Navbar = () => {
                         <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                             <Link to='/'><li><a>Home</a></li></Link>
                             <li tabIndex={0}>
-                                <a className="justify-between">
-                                    All Toys
-                                    <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
-                                </a>
-                                
+                                <Link to='/allToys'>
+                                    <a className="justify-between">
+                                        All Toys
+                                        <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
+                                    </a>
+                                </Link>
+
                             </li>
-                            <li><a>My Toys</a></li>
-                            <li><a>Add a Toys</a></li>
+                            <Link to='/myToys'>
+                                <li><a>My Toys</a></li>
+                            </Link>
+                            <Link to='/addToy'>
+                                <li><a>Add a Toys</a></li>
+                            </Link>
                             <Link to='/blogs'><li><a>Blogs</a></li></Link>
                         </ul>
                     </div>
@@ -27,15 +33,21 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
-                    <Link to='/'><li><a>Home</a></li></Link>
+                        <Link to='/'><li><a>Home</a></li></Link>
                         <li tabIndex={0}>
-                            <a>
-                               All Toys
-                            </a>
-                            
+                            <Link to='/allToys'>
+                                <a>
+                                    All Toys
+                                </a>
+                            </Link>
+
                         </li>
-                        <li><a>My Toys</a></li>
-                        <li><a>Add a Toys</a></li>
+                        <Link to='/myToys'>
+                            <li><a>My Toys</a></li>
+                        </Link>
+                        <Link to='/addToy'>
+                            <li><a>Add a Toys</a></li>
+                        </Link>
                         <Link to='/blogs'><li><a>Blogs</a></li></Link>
                     </ul>
                 </div>

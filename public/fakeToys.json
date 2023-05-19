@@ -1,0 +1,213 @@
+[
+    {
+      "name": "Rattle Ball",
+      "age_range": "0-12 months",
+      "material": "BPA-free plastic",
+      "color": "red",
+      "price": 12.99,
+      "rating": 4.5,
+      "id": 1,
+      "image": "https://m.media-amazon.com/images/I/718LH8Kvl5L._AC_UL400_.jpg"
+    },
+    {
+      "name": "Soft Plush Toy",
+      "age_range": "0-24 months",
+      "material": "Polyester",
+      "color": "pink",
+      "price": 9.99,
+      "rating": 4.2,
+      "id": 2,
+      "image": "https://m.media-amazon.com/images/I/81s+p-98uyL._AC_UL400_.jpg"
+    },
+    {
+      "name": "Stacking Rings",
+      "age_range": "6-36 months",
+      "material": "Non-toxic plastic",
+      "color": "green",
+      "price": 14.99,
+      "rating": 4.7,
+      "id": 3,
+      "image": "https://m.media-amazon.com/images/I/718WG4l7-PL._AC_UL400_.jpg"
+    },
+    {
+      "name": "Squeaky Duck",
+      "age_range": "0-12 months",
+      "material": "Rubber",
+      "color": "yellow",
+      "price": 7.99,
+      "rating": 4.0,
+      "id": 4,
+      "image": "https://m.media-amazon.com/images/I/51GKDSaqy4L._AC_UL400_.jpg"
+    },
+    {
+      "name": "Teething Keys",
+      "age_range": "3-12 months",
+      "material": "BPA-free plastic",
+      "color": "blue",
+      "price": 6.99,
+      "rating": 4.3,
+      "id": 5,
+      "image": "https://m.media-amazon.com/images/I/81322JkDxJL._AC_UL400_.jpg"
+    },
+    {
+      "name": "Activity Gym",
+      "age_range": "0-6 months",
+      "material": "Fabric",
+      "color": "multicolor",
+      "price": 34.99,
+      "rating": 4.8,
+      "id": 6,
+      "image": "https://m.media-amazon.com/images/I/71G3zeFg0pL._AC_UL400_.jpg"
+    },
+    {
+      "name": "Musical Mobile",
+      "age_range": "0-12 months",
+      "material": "Plastic",
+      "color": "white",
+      "price": 19.99,
+      "rating": 4.6,
+      "id": 7,
+      "image": "https://m.media-amazon.com/images/I/71rsoSMTikL._AC_UL400_.jpg"
+    },
+    {
+      "name": "Stacking Cups",
+      "age_range": "6-24 months",
+      "material": "Non-toxic plastic",
+      "color": "rainbow",
+      "price": 8.99,
+      "rating": 4.4,
+      "id": 8,
+      "image": "https://m.media-amazon.com/images/I/61xk7AMMIYL._AC_UL400_.jpg"
+    },
+    {
+      "name": "Crib Mirror",
+      "age_range": "0-12 months",
+      "material": "Acrylic",
+      "color": "silver",
+      "price": 14.99,
+      "rating": 4.2,
+      "id": 9,
+      "image": "https://m.media-amazon.com/images/I/912RuWzi8eL._AC_UL400_.jpg"
+    },
+    {
+      "name": "Sensory Ball Set",
+      "age_range": "6-24 months",
+      "material": "BPA-free plastic",
+      "color": "multicolor",
+      "price": 16.99,
+      "rating": 4.7,
+      "id": 10,
+      "image": "https://m.media-amazon.com/images/I/71ZzKSXSrJL._AC_UL400_.jpg"
+    },
+
+    {
+        "name": "rabada",
+        "age_range": "0-12 months",
+        "material": "BPA-free plastic",
+        "color": "red",
+        "price": 12.99,
+        "rating": 4.5,
+        "id": 11,
+        "image": "https://m.media-amazon.com/images/I/71rvgciDMRL._AC_UL400_.jpg"
+      },
+      {
+        "name": "sabeda",
+        "age_range": "0-24 months",
+        "material": "Polyester",
+        "color": "pink",
+        "price": 9.99,
+        "rating": 4.2,
+        "id": 12,
+        "image": "https://m.media-amazon.com/images/I/81SppaTzBlL._AC_UL400_.jpg"
+      },
+      {
+        "name": "singari",
+        "age_range": "6-36 months",
+        "material": "Non-toxic plastic",
+        "color": "green",
+        "price": 14.99,
+        "rating": 4.7,
+        "id": 13,
+        "image": "https://m.media-amazon.com/images/I/61aggAUx5zL._AC_UL400_.jpg"
+      },
+      {
+        "name": "markoli",
+        "age_range": "0-12 months",
+        "material": "Rubber",
+        "color": "yellow",
+        "price": 7.99,
+        "rating": 4.0,
+        "id": 14,
+        "image": "https://m.media-amazon.com/images/I/61PsCEjkCyS._AC_UL400_.jpg"
+      },
+      {
+        "name": "salio",
+        "age_range": "3-12 months",
+        "material": "BPA-free plastic",
+        "color": "blue",
+        "price": 6.99,
+        "rating": 4.3,
+        "id": 15,
+        "image": "https://m.media-amazon.com/images/I/61qXlGWU8mL._AC_UL400_.jpg"
+      },
+      {
+        "name": "adomi",
+        "age_range": "0-6 months",
+        "material": "Fabric",
+        "color": "multicolor",
+        "price": 34.99,
+        "rating": 4.8,
+        "id": 16,
+        "image": "https://m.media-amazon.com/images/I/71f1U51t+TL._AC_UL400_.jpg"
+      },
+      {
+        "name": "Musical anro",
+        "age_range": "0-12 months",
+        "material": "Plastic",
+        "color": "white",
+        "price": 19.99,
+        "rating": 4.6,
+        "id": 17,
+        "image": "https://m.media-amazon.com/images/I/81URn1-XPSL._AC_UL400_.jpg"
+      },
+      {
+        "name": "Musical ",
+        "age_range": "0-12 months",
+        "material": "Plastic",
+        "color": "white",
+        "price": 19.99,
+        "rating": 4.6,
+        "id": 17,
+        "image": "https://m.media-amazon.com/images/I/813tgRYNjtL._AC_UL400_.jpg"
+      },
+      {
+        "name": "bemstic",
+        "age_range": "0-12 months",
+        "material": "Plastic",
+        "color": "white",
+        "price": 19.99,
+        "rating": 4.6,
+        "id": 17,
+        "image": "https://m.media-amazon.com/images/I/71x5-jrtvXL._AC_UL400_.jpg"
+      },
+      {
+        "name": "nestosic",
+        "age_range": "0-12 months",
+        "material": "Plastic",
+        "color": "white",
+        "price": 19.99,
+        "rating": 4.6,
+        "id": 17,
+        "image": "https://m.media-amazon.com/images/I/61kZQYtRgXL._AC_UL400_.jpg"
+      },
+      {
+        "name": "sandocala",
+        "age_range": "0-12 months",
+        "material": "Plastic",
+        "color": "white",
+        "price": 19.99,
+        "rating": 4.6,
+        "id": 17,
+        "image": "https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/fb316205-ccee-441e-b399-8016fe2b62de._CR0,0,1200,628_SX460_QL70_.jpg"
+      }
+]

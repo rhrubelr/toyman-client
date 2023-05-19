@@ -1,5 +1,6 @@
-import { FaGithub, FaGoogle } from 'react-icons/fa';
+import {  FaGoogle } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+
 
 const Login = () => {
     const handleLogin = event =>{
@@ -7,7 +8,7 @@ const Login = () => {
         const form = event.target;
         const email = form.email.value;
         const password = form.password.value;
-        console.log(email, password)        
+        console.log(email, password)
     }
     return (
         <div  className='mb-10  container mx-auto bg-cyan-950 rounded-lg py-10'>
@@ -29,7 +30,6 @@ const Login = () => {
 
                 <button className=' my-2 btn btn-xs sm:btn-sm md:btn-md lg:btn-lg' type='submit'>Login</button>
                 <div className='flex'>
-                    <button className='btn btn-info w-1/2 mt-2' type='submit'> <span className='text-2xl me-2'> <FaGithub /> </span> Github</button>
                     <button className='btn btn-primary w-1/2 mt-2' type='submit'> <span className='text-red-400 me-2 text-2xl'><FaGoogle></FaGoogle></span>       Google</button>
                 </div>
                 <p className='text-white'>Do you new this website? please <span className='link active-link'><Link to='/registration'>registration</Link></span></p>
