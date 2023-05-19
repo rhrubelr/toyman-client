@@ -5,7 +5,7 @@ const ToyCard = ({toy}) => {
     console.log(toy)
     return (
         
-            <div className="card w-70 h-90 bg-base-100 shadow-xl gap-5">
+            <div className="card w-70 h-70 bg-base-100 shadow-xl gap-5">
                 <figure className="px-10 pt-10">
                     <img src={image}  className="rounded-xl h-50 w-50" />
                 </figure>

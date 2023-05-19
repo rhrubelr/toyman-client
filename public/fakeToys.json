@@ -17,7 +17,7 @@
       "color": "pink",
       "price": 9.99,
       "rating": 4.2,
-      "category": "baby music",
+      "category": "baby toy",
       "id": 2,
       "image": "https://m.media-amazon.com/images/I/81s+p-98uyL._AC_UL400_.jpg"
     },
@@ -28,7 +28,7 @@
       "color": "green",
       "price": 14.99,
       "rating": 4.7,
-      "category": "baby saikel",
+      "category": "baby puzzle",
       "id": 3,
       "image": "https://m.media-amazon.com/images/I/718WG4l7-PL._AC_UL400_.jpg"
     },
@@ -40,7 +40,7 @@
       "price": 7.99,
       "rating": 4.0,
       "id": 4,
-      "category": "baby dog",
+      "category": "baby toy",
       "image": "https://m.media-amazon.com/images/I/51GKDSaqy4L._AC_UL400_.jpg"
     },
     {
@@ -51,7 +51,7 @@
       "price": 6.99,
       "rating": 4.3,
       "id": 5,
-      "category": "baby play",
+      "category": "baby puzzle",
       "image": "https://m.media-amazon.com/images/I/81322JkDxJL._AC_UL400_.jpg"
     },
     {
@@ -62,7 +62,7 @@
       "price": 34.99,
       "rating": 4.8,
       "id": 6,
-      "category": "baby play",
+      "category": "baby puzzle",
       "image": "https://m.media-amazon.com/images/I/71G3zeFg0pL._AC_UL400_.jpg"
     },
     {
@@ -73,7 +73,7 @@
       "price": 19.99,
       "rating": 4.6,
       "id": 7,
-      "category": "baby play",
+      "category": "baby puzzle",
       "image": "https://m.media-amazon.com/images/I/71rsoSMTikL._AC_UL400_.jpg"
     },
     {
@@ -84,7 +84,7 @@
       "price": 8.99,
       "rating": 4.4,
       "id": 8,
-      "category": "toy chair",
+      "category": "baby puzzle",
       "image": "https://m.media-amazon.com/images/I/61xk7AMMIYL._AC_UL400_.jpg"
     },
     {
@@ -162,7 +162,7 @@
         "price": 6.99,
         "rating": 4.3,
         "id": 15,
-        "category": "baby doll",
+        "category": "baby puzzle",
         "image": "https://m.media-amazon.com/images/I/61qXlGWU8mL._AC_UL400_.jpg"
       },
       {
@@ -173,7 +173,7 @@
         "price": 34.99,
         "rating": 4.8,
         "id": 16,
-        "category": "baby bag",
+        "category": "baby puzzle",
         "image": "https://m.media-amazon.com/images/I/71f1U51t+TL._AC_UL400_.jpg"
       },
       {
@@ -184,7 +184,7 @@
         "price": 19.99,
         "rating": 4.6,
         "id": 17,
-        "category": "baby box",
+        "category": "baby puzzle",
         "image": "https://m.media-amazon.com/images/I/81URn1-XPSL._AC_UL400_.jpg"
       },
       {
@@ -199,14 +199,14 @@
         "image": "https://m.media-amazon.com/images/I/813tgRYNjtL._AC_UL400_.jpg"
       },
       {
-        "name": "toy chair",
+        "name": "baby chair",
         "age_range": "0-12 months",
         "material": "Plastic",
         "color": "white",
         "price": 19.99,
         "rating": 4.6,
         "id": 17,
-        "category": "baby chair",
+        "category": "baby puzzle",
         "image": "https://m.media-amazon.com/images/I/71x5-jrtvXL._AC_UL400_.jpg"
       },
       {
@@ -217,7 +217,7 @@
         "price": 19.99,
         "rating": 4.6,
         "id": 17,
-        "category": "baby saikel",
+        "category": "baby toy",
         "image": "https://m.media-amazon.com/images/I/61kZQYtRgXL._AC_UL400_.jpg"
       },
       {
