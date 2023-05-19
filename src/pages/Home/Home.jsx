@@ -3,6 +3,9 @@ import Banner from "../Banner/Banner";
 import ToyCard from "../ToyCard/ToyCard";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
+import Galary from "../Galary/Galary";
+import Marquee from "react-fast-marquee";
+
 
 const Home = () => {
 
@@ -43,6 +46,16 @@ const Home = () => {
     return (
         <div>
             <Banner></Banner>
+
+            <h2 className='text-center font-bold text-2xl text-white bg-gray-900 py-5'>Baby Gallary</h2>
+            <Marquee>
+                {
+                    toys.map(toy =>
+                        <Galary
+                            key={toys.id} toy={toy}
+                        ></Galary>)
+                }
+            </Marquee>
 
             <h4 className="text-center font-bold text-3xl text-red-500 mb-10">Baby shop Corner: {toys.length}</h4>
 

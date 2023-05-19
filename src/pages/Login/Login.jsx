@@ -3,12 +3,14 @@ import { Link } from 'react-router-dom';
 
 
 const Login = () => {
+
     const handleLogin = event =>{
         event.preventDefault();
         const form = event.target;
         const email = form.email.value;
         const password = form.password.value;
         console.log(email, password)
+        
     }
     return (
         <div  className='mb-10  container mx-auto bg-cyan-950 rounded-lg py-10'>
