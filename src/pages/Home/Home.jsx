@@ -58,7 +58,7 @@ const Home = () => {
                 }
             </Marquee>
 
-            <h4 className="text-center font-bold text-3xl text-red-500 mb-10">Baby shop Corner: {toys.length}</h4>
+            <h4 className="text-center font-bold text-3xl text-red-500 my-10">Baby shop Corner: {toys.length}</h4>
 
 
             <Tabs>
