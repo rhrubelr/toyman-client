@@ -12,7 +12,8 @@ const AddToys = () => {
         const seller = form.seller.value;
         const company = form.company.value;
         const photo = form.photo.value;
-        const NewToy = { name, quantity, datetime, category, details, seller, company, photo }
+        const email = form.email.value;
+        const NewToy = { email, name, quantity, datetime, category, details, seller, company, photo }
         console.log(NewToy)
 
         // send data to server 

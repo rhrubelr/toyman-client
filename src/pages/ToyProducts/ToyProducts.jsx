@@ -1,28 +1,49 @@
 import React from 'react';
 
 const ToyProducts = ({ toy }) => {
-    const { name, quantity, datetime, category, details, seller, company, photo } = toy;
+    const { name, quantity,email, datetime, category, details, seller, company, photo } = toy;
 
     return (
-        <div>
-            <div className="card h-100 w-96 bg-neutral text-neutral-content">
-                <div className="card-body items-center text-center">
-                    <img className='h-20 w-30' src={photo} alt="" />
-                    <h2 className="card-title"> name: {name}</h2>
-                    <p> quantity: {quantity}</p>
-                    <p> date and time: {datetime}</p>
-                    <p> category: {category}</p>
-                    <p> details: {details}</p>
-                    <p> seller: {seller}</p>
-                    <p> company: {company}</p>
-                    <div className="card-actions justify-end">
-                        <button className="btn btn-primary">Update</button>
-                        <button className="btn btn-accent">Delete</button>
-                    </div>
-                </div>
-            </div>
 
-        </div>
+
+
+
+        <tbody >
+            
+
+
+            {/* row 4 */}
+            <tr >
+                
+                <td >
+                    <div className="flex items-center space-x-3">
+                        <div className="avatar">
+                            <div className="mask mask-squircle w-12 h-12">
+                                <img src="/tailwind-css-component-profile-5@56w.png" alt="Avatar Tailwind CSS Component" />
+                            </div>
+                        </div>
+                        <div>
+                            <div className="font-bold">{name}</div>
+                            <div className="text-sm opacity-50">{quantity}</div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    product name: {name}
+                    <br />
+                    <span className="badge badge-ghost badge-sm">Community Outreach Specialist</span>
+                </td>
+                <td> Email : {email}</td>
+                <th className='flex justify-center items-center'>
+                    <button className="btn btn-ghost btn-xs">Edit</button>
+                    <button className="btn btn-ghost btn-primary">Delete</button>
+                </th>
+            </tr>
+
+
+            
+        </tbody>
+
     );
 };
 
