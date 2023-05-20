@@ -27,13 +27,14 @@ const AddToys = () => {
             .then(res => res.json())
             .then(data => {
                 console.log(data)
-                if (data.insertId) {
+                if (data.insertedId) {
                     Swal.fire({
-                        title: 'success',
-                        text: 'coffee added successfully',
+                        position: 'top-center',
                         icon: 'success',
-                        confirmButtonText: 'Cool'
-                    })
+                        title: 'Toy added successfully',
+                        showConfirmButton: false,
+                        timer: 1500
+                      })
                 }
             })
     }
@@ -50,6 +51,14 @@ const AddToys = () => {
                         </label>
                         <label className="input-group">
                             <input type="text" name="name" placeholder="Toys name" className="input input-bordered w-full" />
+                        </label>
+                    </div>
+                    <div className="form-control md:w-1/2 ms-2">
+                        <label className="label">
+                            <span className="label-text text-white">Seller Email</span>
+                        </label>
+                        <label className="input-group">
+                            <input type="email" name="email" placeholder="seller email" className="input input-bordered w-full" />
                         </label>
                     </div>
                     <div className="form-control md:w-1/2 ml-4">
