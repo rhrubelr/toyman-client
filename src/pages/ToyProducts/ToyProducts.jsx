@@ -63,12 +63,12 @@ const ToyProducts = ({ toy, toys, setToys }) => {
                 <td>
                     date time : {datetime}
                     <br />
-                    <span className="badge badge-ghost badge-sm">Community Outreach Specialist</span>
+                    <span className="badge badge-ghost badge-sm">Seller Name: {seller}</span>
                 </td>
                 <td> Email : {email}</td>
-                <th className='flex justify-center items-center'>
+                <th className='flex justify-center items-center gap-2'>
                     <button className="btn  btn-accent">Edit</button>
-                    <button onClick={() => handleDelete(_id)} className="btn  btn-primary">Delete</button>
+                    <button  onClick={() => handleDelete(_id)} className="btn  btn-primary me-4">Delete</button>
                 </th>
             </tr>
 

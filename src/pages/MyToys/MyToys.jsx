@@ -7,20 +7,21 @@ const MyToys = () => {
     const [toys, setToys] = useState(products)
     return (
         <div>
-            <div className="overflow-x-auto w-full">
+            <div className="overflow-x-auto w-full container mx-auto">
                 <table className="table w-full">
                     {/* head */}
-                    <thead className="container mx-auto">
+                    <thead className="">
                         <tr>
                             <th>
                                 <label>
-                                    <input type="checkbox" className="checkbox" />
+                                    <th> Product Name</th>
                                 </label>
                             </th>
+
                             <th>Produnt Info</th>
-                            <th>Name</th>
                             <th>Email</th>
-                            <th> price</th>
+                            <th>Delete and Edit</th>
+                            {/* <th> price</th> */}
                             <th></th>
                         </tr>
                     </thead>

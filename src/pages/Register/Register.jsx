@@ -33,32 +33,32 @@ const Register = () => {
 
             <form onSubmit={handleRegister} className="form-control w-full max-w-xs mx-auto">
                 <label className="label">
-                    <span className="label-text font-bold">What is your name ?</span>
+                    <span className="label-text font-bold text-white">What is your name ?</span>
                     
                 </label>
                 <input type="text" name='name' placeholder="Type here"  required className="input input-bordered w-full max-w-xs" />
 
                 <label className="label">
-                    <span className="label-text font-bold">What is your image URL ?</span>
+                    <span className="label-text font-bold text-white">What is your image URL ?</span>
                     
                 </label>
                 <input type="text" name='photo' placeholder="Type here" required className="input input-bordered w-full max-w-xs" />
 
                 <label className="label">
-                    <span className="label-text font-bold">What is your Email ?</span>
+                    <span className="label-text font-bold text-white">What is your Email ?</span>
                     
                 </label>
                 <input type="email" name='email' placeholder="Type here" required className="input input-bordered w-full max-w-xs" />
 
                 <label className="label">
-                    <span className="label-text font-bold">What is your Password?</span>
+                    <span className="label-text font-bold text-white">What is your Password?</span>
                     
                 </label>
                 <input type="password" name='password' placeholder="Type here" required className="input input-bordered w-full max-w-xs" />
 
-                <button className='btn btn-accent mt-2' type='submit'>Register</button>
+                <button className='btn btn-accent mt-2 text-white' type='submit'>Register</button>
 
-                <p>Already have an account <span> <Link className='link link-primary' to="/login">Login</Link></span></p>
+                <p className="text-white">Already have an account <span> <Link className='link link-primary' to="/login">Login</Link></span></p>
                 
             </form>
         </div>
