@@ -1,12 +1,12 @@
 
 import { Link } from "react-router-dom";
 import { AuthContext } from '../provider/AuthProviders';
-import { useContext } from "react";
+import { useContext, useState } from "react";
 
 
 const Register = () => {
     const {createUser} = useContext(AuthContext)
-
+    const [error, setError] = useState('')
     const handleRegister = event => {
         event.preventDefault();
         const form = event.target;
@@ -24,6 +24,7 @@ const Register = () => {
         })
         .catch(error => {
             console.log(error)
+            setError(error)
         })
     }
     return (

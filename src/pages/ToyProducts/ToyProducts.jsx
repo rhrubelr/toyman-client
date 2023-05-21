@@ -1,25 +1,57 @@
 import React from 'react';
+import Swal from 'sweetalert2';
 
-const ToyProducts = ({ toy }) => {
-    const { name, quantity,email, datetime, category, details, seller, company, photo } = toy;
+const ToyProducts = ({ toy, toys, setToys }) => {
+    const { _id, name, quantity, email, datetime, category, details, seller, company, photo } = toy;
 
+    const handleDelete = (_id) => {
+        console.log('this is delete', _id)
+        Swal.fire({
+            title: 'Are you sure?',
+            text: "You won't be able to revert this!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, delete it!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+
+                fetch(`http://localhost:5000/toys/${_id}`,{
+                    method: 'DELETE'
+                
+                })
+                    .then(res => res.json())
+                    .then(data => {
+                        console.log(data)
+                        if (data.deletedCount > 0) {
+                            Swal.fire(
+                                'Deleted!',
+                                'Your product has been deleted.',
+                                'success'
+                            )
+                            const remaing = toys.filter( pd => pd._id !== _id)
+                            setToys(remaing)
+                        }
+
+                    })
+            }
+        })
+    }
     return (
 
-
-
-
         <tbody >
-            
+
 
 
             {/* row 4 */}
             <tr >
-                
+
                 <td >
                     <div className="flex items-center space-x-3">
                         <div className="avatar">
                             <div className="mask mask-squircle w-12 h-12">
-                                <img src="/tailwind-css-component-profile-5@56w.png" alt="Avatar Tailwind CSS Component" />
+                                <img src={photo} alt="Avatar Tailwind CSS Component" />
                             </div>
                         </div>
                         <div>
@@ -29,19 +61,19 @@ const ToyProducts = ({ toy }) => {
                     </div>
                 </td>
                 <td>
-                    product name: {name}
+                    date time : {datetime}
                     <br />
                     <span className="badge badge-ghost badge-sm">Community Outreach Specialist</span>
                 </td>
                 <td> Email : {email}</td>
                 <th className='flex justify-center items-center'>
-                    <button className="btn btn-ghost btn-xs">Edit</button>
-                    <button className="btn btn-ghost btn-primary">Delete</button>
+                    <button className="btn  btn-accent">Edit</button>
+                    <button onClick={() => handleDelete(_id)} className="btn  btn-primary">Delete</button>
                 </th>
             </tr>
 
 
-            
+
         </tbody>
 
     );

@@ -5,21 +5,25 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import Galary from "../Galary/Galary";
 import Marquee from "react-fast-marquee";
+import { useLoaderData } from "react-router-dom";
 
 
 const Home = () => {
-
+    const veiws = useLoaderData();
+    console.log(veiws)
+   const product = useLoaderData();
+   console.log(product)
     const [toys, setToys] = useState([]);
     console.log(toys)
-    const [products, setProducts] = useState([]);
+    const [products, setProducts] = useState(product);
 
-    useEffect(() => {
-        fetch('fakeToys.json')
-            .then(res => res.json())
-            .then(data => {
-                setProducts(data)
-            })
-    }, [])
+    // useEffect(() => {
+    //     fetch('fakeToys.json')
+    //         .then(res => res.json())
+    //         .then(data => {
+    //             setProducts(data)
+    //         })
+    // }, [])
 
 
     const babyToys = () => {
@@ -33,11 +37,7 @@ const Home = () => {
         console.log(filter)
         setToys(filter)
     }
-    // const babyToysChair = () => {
-    //     const filter = products.filter(product => product.category == 'baby chair')
-    //     console.log(filter)
-    //     setToys(filter)
-    // }
+    
     const babyToysPuzzle = () => {
         const filter = products.filter(product => product.category == 'baby puzzle')
         console.log(filter)
