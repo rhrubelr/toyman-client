@@ -17,7 +17,7 @@ const AddToys = () => {
         console.log(NewToy)
 
         // send data to server 
-        fetch('http://localhost:5000/toys', {
+        fetch('https://assignment-11-server-seven-silk.vercel.app/toys', {
             method: "POST",
             headers: {
                 'content-type': 'application/json'

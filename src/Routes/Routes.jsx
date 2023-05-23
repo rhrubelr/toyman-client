@@ -21,7 +21,7 @@ const router = createBrowserRouter([
         {
             path:'/',
             element: <Home></Home>,
-            loader: ()=> fetch('http://localhost:5000/products')
+            loader: ()=> fetch('https://assignment-11-server-seven-silk.vercel.app/products')
         },
         {
             path:'/blogs',
@@ -38,7 +38,7 @@ const router = createBrowserRouter([
         {
            path: '/myToys',
            element: <MyToys></MyToys>,
-           loader:()=> fetch('http://localhost:5000/toys')
+           loader:()=> fetch('https://assignment-11-server-seven-silk.vercel.app/toys')
 
         },
         {
@@ -48,7 +48,7 @@ const router = createBrowserRouter([
         {
            path: '/allToys',
            element: <AllToys></AllToys>,
-           loader: ()=> fetch('http://localhost:5000/toys')
+           loader: ()=> fetch('https://assignment-11-server-seven-silk.vercel.app/toys')
         },
         {
           path: '/addToy',
@@ -57,7 +57,7 @@ const router = createBrowserRouter([
         {
           path: 'viewDetails/:id',
           element: <ViewDetails></ViewDetails>,
-          loader: ({params})=> fetch(`http://localhost:5000/products/${params.id}`)
+          loader: ({params})=> fetch(`https://assignment-11-server-seven-silk.vercel.app/products/${params.id}`)
         }
       ]
     },

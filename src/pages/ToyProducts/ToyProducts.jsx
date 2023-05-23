@@ -17,7 +17,7 @@ const ToyProducts = ({ toy, toys, setToys }) => {
         }).then((result) => {
             if (result.isConfirmed) {
 
-                fetch(`http://localhost:5000/toys/${_id}`,{
+                fetch(`https://assignment-11-server-seven-silk.vercel.app/toys/${_id}`,{
                     method: 'DELETE'
                 
                 })
